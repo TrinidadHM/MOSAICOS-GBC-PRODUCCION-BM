@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producción JUL - EMPAQUE</title>
+    <style>
+        /* Contenedor del mosaico */
+        .mosaic {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Contenedor de cada miniatura */
+        .thumbnail {
+            width: 300px;  /* Tamaño del contenedor visible */
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* Ajustes del iframe para escalar contenido */
+        .scaled-iframe {
+            width: 1920px;   /* Ancho real de la página web a mostrar */
+            height: 1080px;   /* Alto real de la página web */
+            transform: scale(0.16);  /* Escala para ajustar al contenedor */
+            transform-origin: 0 0;
+            border: none;
+        }
+        .thumbnail:hover .scaled-iframe {
+       transform: scale(0.18); /* Aumenta ligeramente al pasar el mouse */
+       transition: transform 0.3s;
+        }
+        .thumbnail {
+       box-shadow: 0 4px 12px rgba(0,0,0,0.1); /*Sombra para mejorar el diseño */
+        }
+        footer {
+            background-color: #f8f9fa; /* Fondo claro */
+            color: #6c757d;           /* Color de texto gris */
+            text-align: center;       /* Alineación centrada */
+            padding: 20px 0;          /* Espaciado interno */
+            font-family: 'Georgia', serif; /* Fuente formal */
+            font-size: 14px;          /* Tamaño de fuente */
+            border-top: 1px solid #e9ecef; /* Borde superior sutil */
+            margin-top: 40px;         /* Espacio superior */
+        }
+        .iframe-container {
+        margin: 20px 0;
+        }
+        iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        }
+    </style>
+</head>
+<BODY>
+
+<div class="mosaic">
+    <!-- MN2 MINI MUFFIN-->
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.48.155:8080/gbconnected/plen/mn2_mini_muffin" loading="lazy"
+        ></iframe>
+    </div>
+    <!-- MN2 PASTELERIA -->   
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.48.155:8080/gbconnected/plen/mn2_pasteleria_panqueleria" loading="lazy"
+        ></iframe>
+    </div>
+
+</div>
+<footer>
+    <div>
+        <p>Contáctanos: GBConnected.BM@grupobimbo.com</p>
+        <p>y/o Trinidad.hernandez@grupobimbo.com</p>
+
+    </div>
+</footer>
+
+</BODY>
+</html>

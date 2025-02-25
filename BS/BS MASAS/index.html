@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBC Producción BS - Masas</title>
+    <style>
+        /* Contenedor del mosaico */
+        .mosaic {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Contenedor de cada miniatura */
+        .thumbnail {
+            width: 300px;  /* Tamaño del contenedor visible */
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* Ajustes del iframe para escalar contenido */
+        .scaled-iframe {
+            width: 1920px;   /* Ancho real de la página web a mostrar */
+            height: 1080px;   /* Alto real de la página web */
+            transform: scale(0.16);  /* Escala para ajustar al contenedor */
+            transform-origin: 0 0;
+            border: none;
+        }
+        .thumbnail:hover .scaled-iframe {
+       transform: scale(0.18); /* Aumenta ligeramente al pasar el mouse */
+       transition: transform 0.3s;
+        }
+        .thumbnail {
+       box-shadow: 0 4px 12px rgba(0,0,0,0.1); /*Sombra para mejorar el diseño */
+        }
+        footer {
+            background-color: #f8f9fa; /* Fondo claro */
+            color: #6c757d;           /* Color de texto gris */
+            text-align: center;       /* Alineación centrada */
+            padding: 20px 0;          /* Espaciado interno */
+            font-family: 'Georgia', serif; /* Fuente formal */
+            font-size: 14px;          /* Tamaño de fuente */
+            border-top: 1px solid #e9ecef; /* Borde superior sutil */
+            margin-top: 40px;         /* Espacio superior */
+        }
+        .iframe-container {
+        margin: 20px 0;
+        }
+        iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        }
+    </style>
+</head>
+<BODY>
+
+<div class="mosaic">
+    <!-- BS BOLLERÍA SAL -->
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.45.54:8080/gbconnected/plm/bolleria" loading="lazy"
+        ></iframe>
+    </div>
+
+    <!-- BS PAN DE CAJA -->
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.45.54:8080/gbconnected/plm/panes" loading="lazy"
+            ></iframe>
+    </div>
+
+    <!-- BS PANQUELERÍA -->
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.45.54:8080/gbconnected/plm/panqueleria" loading="lazy"
+            ></iframe>
+    </div>
+
+    <!-- BS TORTILLAS -->
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.45.54:8080/gbconnected/plm/tortillinas" loading="lazy"
+            ></iframe>
+    </div>
+
+    <!-- BS PAN TOSTADO -->
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.45.54:8080/gbconnected/plm/tostado_1" loading="lazy"
+            ></iframe>
+    </div>
+
+    <!-- BS TOSTADAS 1 -->
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.45.54:8080/gbconnected/plm/tostada_1" loading="lazy"
+            ></iframe>
+    </div>
+
+    <!-- BS MOLIDO-->
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.45.54:8080/gbconnected/plm/molido" loading="lazy"
+            ></iframe>
+    </div>
+
+    <!-- BS TOSTADAS 2 -->
+    <div class="thumbnail">
+        <iframe 
+            class="scaled-iframe iframe-container iframe"
+            src="http://172.29.45.54:8080/gbconnected/plm/tostada_2" loading="lazy"
+            ></iframe>
+    </div>
+
+</div>
+<footer>
+    <div>
+        <p>Contáctanos: GBConnected.BM@grupobimbo.com</p>
+        <p>y/o Trinidad.hernandez@grupobimbo.com</p>
+
+    </div>
+</footer>
+
+</BODY>
+</html>
